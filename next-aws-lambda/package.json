@@ -1,0 +1,58 @@
+{
+  "_from": "next-aws-lambda@2.4.1",
+  "_id": "next-aws-lambda@2.4.1",
+  "_inBundle": false,
+  "_integrity": "sha512-GdRUJdCMuBaMhn4PdCd07+rB2NCkw8S9OM5I9Pag6XUgyKpuTFOc+wmCR9nIvM3yPina7uuoBdLnP6am6gJQsA==",
+  "_location": "/next-aws-lambda",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "next-aws-lambda@2.4.1",
+    "name": "next-aws-lambda",
+    "escapedName": "next-aws-lambda",
+    "rawSpec": "2.4.1",
+    "saveSpec": null,
+    "fetchSpec": "2.4.1"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/next-aws-lambda/-/next-aws-lambda-2.4.1.tgz",
+  "_shasum": "9e4fcc3878700b1c9e6885ccc47af8b88521bdfc",
+  "_spec": "next-aws-lambda@2.4.1",
+  "_where": "/home/fwoelm/Projects/next-on-netlify",
+  "author": {
+    "name": "Daniel Conde Marin",
+    "email": "danielconde9@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/danielcondemarin/serverless-next.js/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Compat layer between next.js serverless page and AWS Lambda",
+  "files": [
+    "lib/**",
+    "index.js"
+  ],
+  "gitHead": "c0161b7e34b61e6b2f349da881bd377a12426a4b",
+  "homepage": "https://github.com/danielcondemarin/serverless-next.js#readme",
+  "keywords": [
+    "serverless",
+    "nextjs",
+    "lambda",
+    "next",
+    "api gateway"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "next-aws-lambda",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielcondemarin/serverless-next.js.git",
+    "directory": "packages/next-aws-lambda"
+  },
+  "version": "2.4.1"
+}
