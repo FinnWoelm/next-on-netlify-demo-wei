@@ -114,13 +114,6 @@ const reqResMapper = (event, callback) => {
     res.writeHead(response.statusCode);
     fixApiGatewayMultipleHeaders();
 
-    console.log(res.headers)
-    console.log(response.multiValueHeaders)
-
-    // Netlify requires headers to be capitalized, even though they should be
-    // case insensitive.
-    response.multiValueHeaders["Content-Type"] = response.multiValueHeaders["content-type"]
-
     if (callback) {
       callback(null, response);
     } else {
