@@ -6,15 +6,17 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "next-on-netlify",
+    "postbuild": "node next-on-netlify.js",
     "netlify:dev": "npm run build && netlify dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "fs-extra": "^9.0.0",
     "next": "^9.3.6",
-    "next-on-netlify": "github:FinnWoelm/next-on-netlify#support-query-params",
+    "next-aws-lambda": "^2.4.1",
+    "path-to-regexp": "^3.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
