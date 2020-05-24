@@ -8,5 +8,6 @@ const getResponse = json => ({
 
 exports.handler = function(event, context, callback) {
   const response = getResponse(JSON.stringify({ message: "hello world :)"}))
+  console.log(response)
   callback(null, response)
 }

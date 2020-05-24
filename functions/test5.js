@@ -4,10 +4,11 @@ exports.handler = function(event, context, callback) {
     isBase64Encoded: false,
     statusCode: 200,
     headers: {
-      'content-type': 'application/json; charset=utf-8',
+      'Content-Type': 'application/json; charset=utf-8',
       'content-length': 52
     },
     level: 'info'
   }
+  console.log(response)
   callback(null, response)
 }
