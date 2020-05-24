@@ -4,13 +4,14 @@
   publish   = "public"
 
 [dev]
-  # We use HTTP server without directory listings (-d false),
-  # without caching (-c-1), and without log output (--silent).
-  # More info: https://www.npmjs.com/package/http-server
-  command   = "http-server --port 3999 -d false -c-1 --silent"
   functions = "functions"
   publish   = "public"
   # We manually set the framework to static, otherwise Netlify automatically
   # detects NextJS and redirects do not work.
   # Read more: https://github.com/netlify/cli/blob/master/docs/netlify-dev.md#project-detection
   framework = "#static"
+
+[[redirects]]
+  from = "/test*"
+  to = "/.netlify/functions/test:splat"
+  status = 200
